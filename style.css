@@ -88,9 +88,10 @@ header .logo {
 .slogan p {
   margin-top: 15px;
   margin-bottom: 20px;
-  margin-left: 22px;
-  margin-right: 22px;
-  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .slogan_button {
@@ -180,14 +181,10 @@ header .logo {
 
 .menus_cartes {
   background: #f2f2f2;
-  display: flex;
-  flex: 1;
   flex-direction: column;
   padding-bottom: 50px;
-}
-
-.menus_cartes h2 {
-  padding-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .carte h3 {
@@ -199,13 +196,19 @@ header .logo {
 }
 
 #restaurants {
+  margin-top: 70px;
   padding-top: 40px;
+  background: #f2f2f2;
+}
+
+#restaurants h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .card {
   border-radius: 20px;
   box-shadow: 4px 4px 6px #aaa;
-  margin: 10px;
   position: relative;
   background: #fff;
 }
@@ -222,23 +225,32 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   flex: 1;
+  height: 45px;
+  padding: 20px 15px 15px 20px;
 }
 
-.card figure {
+.carte h3 {
+  font-size: 20px;
+  margin-left: 0px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
   width: 100%;
   margin: 0px;
 }
 
-.card figure:hover {
+.card:hover {
   background-blend-mode: lighten;
-  box-shadow: 2px 6px 20px #999999;
+  box-shadow: 4px 5px 4px #999999;
   border-radius: 20px;
-}
-
-.card figcaption {
-  padding: 10px 15px 15px 20px;
-  font-size: 18px;
 }
 
 .card .nouveau {
@@ -320,6 +332,11 @@ footer {
   padding-left: 20px;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-size: 18px;
+}
+
+footer .fa-hands-helping {
+  font-size: 14px;
 }
 
 footer ul {
@@ -327,6 +344,7 @@ footer ul {
 }
 
 footer li {
+  margin: 10px;
   list-style-type: none;
 }
 
@@ -336,10 +354,59 @@ footer a {
 }
 
 footer img {
-  height: 18px;
+  margin-left: 14px;
+  height: 20px;
   filter: invert(100%);
 }
 
 footer i {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #choix h2 {
+    text-align: center;
+  }
+  .choix_restau {
+    display: flex;
+    align-items: center;
+  }
+  #restaurants {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #restaurants h2 {
+    margin-left: 50px;
+  }
+  .menus_cartes {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .choix_restau ul {
+    justify-content: space-between;
+  }
+  .menus_cartes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #restaurants h2 {
+    margin-left: 70px;
+  }
+  .card {
+    max-width: 640px;
+    padding: 0;
+    margin: 10px;
+  }
 }
