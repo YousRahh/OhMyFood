@@ -236,3 +236,22 @@ footer img {
 footer i {
   margin-right: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .restaurants_title {
+    justify-content: space-between;
+  }
+  .restaurants_title .icon_heart {
+    margin-right: 80px;
+  }
+  .restaurants_title h2 {
+    margin-left: 70px;
+  }
+  .restaurants_section_menu {
+    align-items: center;
+    margin-left: 40px;
+  }
+  .cards {
+    width: 640px;
+  }
+}
