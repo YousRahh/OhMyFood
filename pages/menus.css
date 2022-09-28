@@ -205,6 +205,99 @@ header .restaurants_title h2 {
   }
 }
 
+.cards h2,
+.cards p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cards:hover .restaurants_plats {
+  width: 60%;
+}
+
+.check {
+  background-color: #99e2d0;
+  width: 0%;
+  height: 100%;
+  margin: 0px;
+  right: 0px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.check i {
+  background-color: #99e2d0;
+  color: white;
+  font-size: 10px;
+  border-radius: 100%;
+}
+
+.fa-check-circle {
+  font-size: 16px;
+}
+
+.prix {
+  position: absolute;
+  padding: 2px 0px 2px 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+  right: 2%;
+}
+
+.cards:hover .prix {
+  animation: translate_prices 0.4s forwards;
+}
+
+@keyframes translate_prices {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 24%;
+  }
+}
+
+.cards:hover .check {
+  animation: translate_check 0.5s forwards;
+  visibility: visible;
+}
+
+@keyframes translate_check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+.cards:hover .check i {
+  animation: rotate 0.4s forwards;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .restaurants_plats {
   display: flex;
   justify-content: space-between;
