@@ -164,6 +164,47 @@ header .restaurants_title h2 {
   font-size: 15px;
 }
 
+.cards_1 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.cards_2 {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.cards_3 {
+  animation: fadeInUp 3s ease-in-out;
+}
+
+.cards_4 {
+  animation: fadeInUp 4s ease-in-out;
+}
+
+.cards h2 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .restaurants_plats {
   display: flex;
   justify-content: space-between;
@@ -253,5 +294,29 @@ footer i {
   }
   .cards {
     width: 640px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .restaurants_title {
+    justify-content: space-between;
+  }
+  .restaurants_title .icon_heart {
+    margin-right: 60px;
+  }
+  .restaurants_title h2 {
+    margin-left: 40px;
+  }
+  .restaurants_section_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cards {
+    width: 400px;
+  }
+  .cards_enchantee {
+    margin-bottom: 45px;
+    margin-top: 30px;
   }
 }
