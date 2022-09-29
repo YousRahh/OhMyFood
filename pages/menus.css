@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -92,14 +92,27 @@ i.fas.fa-heart {
   font-size: 2rem;
 }
 
-header .restaurants_title h2 {
-  font-family: "Shrikhand" cursive;
-  font-style: italic;
-  font-size: 20px;
+.restaurants_title {
   display: flex;
+  flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px 10px 0;
+  margin: 16px 0px -20px 0px;
+  padding-top: 22px;
+}
+
+.nom_restau {
+  font-family: "Shrikhand";
+  font-size: 1.7rem;
+  margin: 0px 10px 0px 30px;
+}
+
+.icon_heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+  margin: 1.2rem 0rem 2rem 0rem;
+  margin-right: 50px;
 }
 
 .page_menu .fig_restaurants {
@@ -121,17 +134,6 @@ header .restaurants_title h2 {
   width: 100%;
   border-radius: 45px 45px 0 0;
   margin-top: -55px;
-}
-
-.restaurants_title {
-  display: flex;
-  align-items: center;
-  margin: 14px;
-}
-
-.restaurants_title h2 {
-  font-family: Shrikhand, sans-serif;
-  font-size: 24px;
 }
 
 .restaurants_section_title {
