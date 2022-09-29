@@ -207,7 +207,12 @@ i.fas.fa-heart {
   }
 }
 
-.cards h2,
+.cards h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .cards p {
   overflow: hidden;
   white-space: nowrap;
@@ -224,6 +229,8 @@ i.fas.fa-heart {
   height: 100%;
   margin: 0px;
   right: 0px;
+  top: 0px;
+  padding: 0px;
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   position: absolute;
@@ -236,7 +243,7 @@ i.fas.fa-heart {
 .check i {
   background-color: #99e2d0;
   color: white;
-  font-size: 10px;
+  font-size: 20px;
   border-radius: 100%;
 }
 
