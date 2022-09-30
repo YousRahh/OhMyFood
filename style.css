@@ -363,7 +363,7 @@ footer i {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #choix h2 {
     text-align: center;
   }
@@ -398,6 +398,17 @@ footer i {
 }
 
 @media screen and (min-width: 992px) {
+  #choix h2 {
+    text-align: center;
+  }
+  .choix_restau {
+    display: flex;
+    align-items: center;
+  }
+  #restaurants {
+    justify-content: center;
+    flex-direction: column;
+  }
   .choix_restau ul {
     justify-content: space-between;
   }
@@ -414,5 +425,9 @@ footer i {
     max-width: 640px;
     padding: 0;
     margin: 10px;
+  }
+  .icon_heart {
+    margin-top: 60px;
+    margin-right: 30px;
   }
 }
