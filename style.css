@@ -376,7 +376,8 @@ footer i {
     flex-direction: column;
   }
   #restaurants h2 {
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-bottom: 20px;
   }
   .menus_cartes {
     align-items: center;
@@ -388,6 +389,11 @@ footer i {
   }
   .card {
     width: 90%;
+    margin-bottom: 30px;
+  }
+  .icon_heart {
+    margin-top: 60px;
+    margin-right: 30px;
   }
 }
 
