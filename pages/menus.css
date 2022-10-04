@@ -63,21 +63,6 @@ header .logo {
   margin-top: -2rem;
 }
 
-.icon_heart_3:hover i.fa-heart {
-  display: none;
-}
-
-.icon_heart_3:hover i.fas.fa-heart {
-  display: block;
-}
-
-.icon_heart_3 {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 2rem;
-  margin: 1.2rem 0 2rem 9rem;
-}
-
 i.fa-heart:hover {
   cursor: pointer;
   border: 0 solid transparent;
