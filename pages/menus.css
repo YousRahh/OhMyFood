@@ -102,7 +102,7 @@ i.fas.fa-heart {
 
 .page_menu .fig_restaurants {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
   height: 260px;
 }
 
