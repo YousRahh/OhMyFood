@@ -143,8 +143,9 @@ i.fas.fa-heart {
   margin: 20px;
   padding: 15px;
   box-shadow: 4px 4px 6px #aaa;
-  position: relative;
+  position: relative; 
   cursor: pointer;
+  
 }
 
 .cards p {
@@ -192,19 +193,23 @@ i.fas.fa-heart {
   }
 }
 
-.titre_plats {
+.cards h2 {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cards p {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cards:hover .restaurants_plats {
+  width: 60%;
+}
+
+.cards:hover .titre_plats {
   width: 60%;
 }
 
